@@ -1,27 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
+<meta charset="UTF-8">
 <title>archive</title>
 
 <style>
+
 body {
     margin: 0;
     background: #07090d;
-    color: #cfd6df;
+    color: #bfc7d1;
     font-family: Arial, sans-serif;
-    padding: 40px;
+    overflow-x: hidden;
 }
 
-img {
-    width: 60%;
-    margin-bottom: 40px;
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 200px;
 }
+
+.scene {
+    position: relative;
+    width: 92%;
+    max-width: 1400px;
+}
+
+.scene img {
+    width: 100%;
+    display: block;
+}
+
+.log {
+    margin-top: 18px;
+    margin-left: 6px;
+    font-size: 11px;
+    line-height: 1.8;
+    opacity: 0.45;
+    letter-spacing: 0.08em;
+}
+
 </style>
 </head>
 
 <body>
 
-<img src="absentseat-003.png">
+<div class="wrapper">
+
+    <div class="scene">
+
+        <img src="absentseat-003.png" alt="archive">
+
+        <div class="log">
+            archive_log_01<br>
+            late winter / weak signal
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
