@@ -14,8 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* 全体 */
-
 .wrapper {
     width: 100%;
     display: flex;
@@ -24,15 +22,11 @@ body {
     padding-bottom: 240px;
 }
 
-/* 画像空間 */
-
 .scene {
     position: relative;
     width: 94%;
     max-width: 1400px;
 }
-
-/* 画像 */
 
 .scene img {
     width: 100%;
@@ -42,8 +36,6 @@ body {
         brightness(0.92)
         contrast(1.06);
 }
-
-/* ログ */
 
 .log {
     margin-top: 18px;
@@ -57,29 +49,6 @@ body {
     letter-spacing: 0.08em;
 }
 
-/* return */
-
-.return {
-    display: inline-block;
-
-    margin-top: 80px;
-    margin-left: 6px;
-
-    font-size: 10px;
-
-    color: #d2c1a3;
-
-    opacity: 0.28;
-
-    text-decoration: none;
-
-    letter-spacing: 0.12em;
-}
-
-.return:hover {
-    opacity: 0.7;
-}
-
 /* hotspot */
 
 .hotspot {
@@ -90,35 +59,27 @@ body {
     border: none;
 }
 
-/* 神聖⇄俗世 切替ポイント */
-/* 後で微調整 */
+/* 釈迦の小銭 */
+/* 後で位置微調整 */
 
 .shift {
-    left: 47%;
-    top: 58%;
+
+    left: 43%;
+    top: 70%;
 
     width: 12%;
-    height: 14%;
+    height: 10%;
 }
 
-/* deeper archive 用 */
+/* deeper archive */
 
 .deep {
+
     left: 76%;
     top: 16%;
 
     width: 10%;
     height: 14%;
-}
-
-/* archive 戻り */
-
-.back {
-    left: 8%;
-    top: 62%;
-
-    width: 20%;
-    height: 22%;
 }
 
 /* スマホ */
@@ -138,11 +99,6 @@ body {
         font-size: 10px;
         opacity: 0.38;
     }
-
-    .return {
-        margin-top: 60px;
-        font-size: 9px;
-    }
 }
 
 </style>
@@ -154,29 +110,20 @@ body {
 
     <div class="scene">
 
-        <!-- 神聖版 -->
         <img src="tenjiku-001.png" alt="tenjiku">
 
-        <!-- 神聖→俗世 -->
+        <!-- 小銭 → 俗世 -->
         <a class="hotspot shift"
            href="tenjiku-shift.html"></a>
 
-        <!-- deeper route -->
+        <!-- deeper -->
         <a class="hotspot deep"
            href="404.html"></a>
-
-        <!-- arcade return -->
-        <a class="hotspot back"
-           href="archive.html"></a>
 
         <div class="log">
             archive_log_14<br>
             route mismatch / saturated faith
         </div>
-
-        <a class="return" href="archive.html">
-            return to arcade
-        </a>
 
     </div>
 
