@@ -9,7 +9,7 @@
 body {
     margin: 0;
     background: #07090d;
-    color: #bfc7d1;
+    color: #cfd6df;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
@@ -19,12 +19,12 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 80px;
-    padding-bottom: 200px;
+    padding-bottom: 220px;
 }
 
 .scene {
     position: relative;
-    width: 92%;
+    width: 94%;
     max-width: 1400px;
 }
 
@@ -42,6 +42,31 @@ body {
     letter-spacing: 0.08em;
 }
 
+/* hotspot */
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    /*
+    ↓ デバッグ中だけ少し見えるように
+    完成後は opacity:0; にする
+    */
+    background: rgba(255,0,0,0.15);
+
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ガールズバー位置 */
+
+.girlsbar {
+    left: 72%;
+    top: 22%;
+
+    width: 14%;
+    height: 16%;
+}
+
 </style>
 </head>
 
@@ -52,6 +77,9 @@ body {
     <div class="scene">
 
         <img src="absentseat-003.png" alt="archive">
+
+        <!-- ガールズバー透明リンク -->
+        <a class="hotspot girlsbar" href="tenjiku.html"></a>
 
         <div class="log">
             archive_log_01<br>
