@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>tenjiku-shift</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #12090c;
+    color: #d6c7b2;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* 全体 */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 260px;
+}
+
+/* 画像空間 */
+
+.scene {
+    position: relative;
+    width: 96%;
+    max-width: 1500px;
+}
+
+/* 画像 */
+
+.scene img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.96)
+        contrast(1.08)
+        saturate(1.06);
+}
+
+/* ログ */
+
+.log {
+    margin-top: 18px;
+    margin-left: 6px;
+
+    font-size: 11px;
+    line-height: 1.8;
+
+    opacity: 0.42;
+
+    letter-spacing: 0.08em;
+}
+
+/* 戻る */
+
+.return {
+    display: inline-block;
+
+    margin-top: 80px;
+    margin-left: 6px;
+
+    font-size: 10px;
+
+    color: #d6c7b2;
+
+    opacity: 0.26;
+
+    text-decoration: none;
+
+    letter-spacing: 0.14em;
+}
+
+.return:hover {
+    opacity: 0.72;
+}
+
+/* hotspot */
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    background: rgba(255,0,0,0.0);
+    border: none;
+}
+
+/* 切替ポイント */
+/* 仮位置：あとで調整 */
+
+.shift {
+    left: 47%;
+    top: 58%;
+
+    width: 12%;
+    height: 14%;
+}
+
+/* deeper archive 用 */
+/* まだ未接続 */
+
+.deep {
+    left: 78%;
+    top: 16%;
+
+    width: 10%;
+    height: 14%;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-top: 38px;
+        padding-bottom: 180px;
+    }
+
+    .scene {
+        width: 98%;
+    }
+
+    .log {
+        font-size: 10px;
+        opacity: 0.38;
+    }
+
+    .return {
+        margin-top: 60px;
+        font-size: 9px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="scene">
+
+        <!-- 俗世版画像 -->
+        <img src="tenjiku-shift-001.png" alt="tenjiku shift">
+
+        <!-- 同位置を押して神聖版へ戻る -->
+        <a class="hotspot shift" href="tenjiku.html"></a>
+
+        <!-- 将来用 deep route -->
+        <a class="hotspot deep" href="404.html"></a>
+
+        <div class="log">
+            archive_log_18<br>
+            phase drift / merit overflow
+        </div>
+
+        <a class="return" href="archive.html">
+            return to arcade
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
