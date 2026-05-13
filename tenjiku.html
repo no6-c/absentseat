@@ -5,6 +5,7 @@
 <title>tenjiku</title>
 
 <style>
+
 body {
     margin: 0;
     background: #090506;
@@ -12,6 +13,8 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
+
+/* 全体 */
 
 .wrapper {
     width: 100%;
@@ -21,35 +24,55 @@ body {
     padding-bottom: 240px;
 }
 
+/* 画像空間 */
+
 .scene {
     position: relative;
     width: 94%;
     max-width: 1400px;
 }
 
+/* 画像 */
+
 .scene img {
     width: 100%;
     display: block;
-    filter: brightness(0.92) contrast(1.06);
+
+    filter:
+        brightness(0.92)
+        contrast(1.06);
 }
+
+/* ログ */
 
 .log {
     margin-top: 18px;
     margin-left: 6px;
+
     font-size: 11px;
     line-height: 1.8;
+
     opacity: 0.42;
+
     letter-spacing: 0.08em;
 }
 
+/* return */
+
 .return {
     display: inline-block;
+
     margin-top: 80px;
     margin-left: 6px;
+
     font-size: 10px;
+
     color: #d2c1a3;
+
     opacity: 0.28;
+
     text-decoration: none;
+
     letter-spacing: 0.12em;
 }
 
@@ -57,31 +80,51 @@ body {
     opacity: 0.7;
 }
 
-/* hidden links / hotspots */
+/* hotspot */
+
 .hotspot {
     position: absolute;
     display: block;
-    opacity: 0;
+
+    background: rgba(255,0,0,0.0);
+    border: none;
 }
 
-/* 仮：画像右上あたり */
-.hotspot-01 {
-    left: 68%;
-    top: 18%;
-    width: 18%;
-    height: 24%;
+/* 神聖⇄俗世 切替ポイント */
+/* 後で微調整 */
+
+.shift {
+    left: 47%;
+    top: 58%;
+
+    width: 12%;
+    height: 14%;
 }
 
-/* 仮：画像左下あたり */
-.hotspot-02 {
+/* deeper archive 用 */
+
+.deep {
+    left: 76%;
+    top: 16%;
+
+    width: 10%;
+    height: 14%;
+}
+
+/* archive 戻り */
+
+.back {
     left: 8%;
     top: 62%;
+
     width: 20%;
     height: 22%;
 }
 
-/* スマホ調整 */
+/* スマホ */
+
 @media (max-width: 700px) {
+
     .wrapper {
         padding-top: 45px;
         padding-bottom: 180px;
@@ -101,28 +144,42 @@ body {
         font-size: 9px;
     }
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="wrapper">
+
     <div class="scene">
 
+        <!-- 神聖版 -->
         <img src="tenjiku-001.png" alt="tenjiku">
 
-        <!-- hidden route / later adjustment -->
-        <a class="hotspot hotspot-01" href="404.html"></a>
-        <a class="hotspot hotspot-02" href="archive.html"></a>
+        <!-- 神聖→俗世 -->
+        <a class="hotspot shift"
+           href="tenjiku-shift.html"></a>
+
+        <!-- deeper route -->
+        <a class="hotspot deep"
+           href="404.html"></a>
+
+        <!-- arcade return -->
+        <a class="hotspot back"
+           href="archive.html"></a>
 
         <div class="log">
             archive_log_14<br>
             route mismatch / saturated faith
         </div>
 
-        <a class="return" href="archive.html">return to arcade</a>
+        <a class="return" href="archive.html">
+            return to arcade
+        </a>
 
     </div>
+
 </div>
 
 </body>
