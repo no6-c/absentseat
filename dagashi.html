@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>dagashi</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #0b0908;
+    color: #d4cabd;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* 全体 */
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 70px;
+    padding-bottom: 260px;
+}
+
+/* 画像空間 */
+
+.scene {
+    width: 96%;
+    max-width: 1200px;
+}
+
+/* 画像＋hotspot専用 */
+
+.image-area {
+    position: relative;
+}
+
+/* 画像 */
+
+.scene img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.88)
+        contrast(1.06)
+        saturate(0.92);
+}
+
+/* ログ */
+
+.log {
+    margin-top: 18px;
+    margin-left: 6px;
+
+    font-size: 11px;
+    line-height: 1.8;
+
+    opacity: 0.42;
+
+    letter-spacing: 0.08em;
+}
+
+/* hotspot */
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    background: rgba(255,0,0,0.0);
+
+    border: none;
+
+    z-index: 20;
+}
+
+/* おじいちゃん */
+/* 後で微調整 */
+
+.oldman {
+
+    left: 46%;
+    top: 25%;
+
+    width: 24%;
+    height: 38%;
+}
+
+/* 黒猫 */
+
+.cat {
+
+    left: 87%;
+    top: 58%;
+
+    width: 9%;
+    height: 14%;
+}
+
+/* ガチャ */
+
+.gacha {
+
+    left: 26%;
+    top: 66%;
+
+    width: 12%;
+    height: 18%;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-top: 38px;
+        padding-bottom: 180px;
+    }
+
+    .scene {
+        width: 98%;
+    }
+
+    .log {
+        font-size: 10px;
+        opacity: 0.38;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="scene">
+
+        <div class="image-area">
+
+            <img src="dagashi-001.png" alt="dagashi">
+
+            <!-- おじいちゃん -->
+            <a class="hotspot oldman"
+               href="dagashi-deep.html">&nbsp;</a>
+
+            <!-- 猫 -->
+            <a class="hotspot cat"
+               href="404.html">&nbsp;</a>
+
+            <!-- ガチャ -->
+            <a class="hotspot gacha"
+               href="archive.html">&nbsp;</a>
+
+        </div>
+
+        <div class="log">
+            archive_log_07<br>
+            cash / candy / memory
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
