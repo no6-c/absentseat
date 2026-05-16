@@ -42,6 +42,58 @@ body {
         saturate(0.88);
 }
 
+.archive-section {
+    margin-top: 96px;
+}
+
+.archive-piece {
+    margin-top: 88px;
+}
+
+.archive-piece:first-child {
+    margin-top: 0;
+}
+
+.archive-piece img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.98)
+        contrast(1.06)
+        saturate(0.92);
+}
+
+.piece-log {
+    margin-top: 14px;
+    margin-left: 6px;
+
+    font-size: 10px;
+    line-height: 1.8;
+
+    opacity: 0.34;
+    letter-spacing: 0.08em;
+}
+
+.small-piece {
+    width: 72%;
+    margin-left: auto;
+}
+
+@media (max-width: 700px) {
+    .archive-section {
+        margin-top: 72px;
+    }
+
+    .archive-piece {
+        margin-top: 68px;
+    }
+
+    .small-piece {
+        width: 88%;
+    }
+}
+    
 .log {
     margin-top: 18px;
     margin-left: 6px;
@@ -175,6 +227,45 @@ body {
             It was only misplaced.
         </div>
 
+        <div class="archive-section">
+
+    <div class="archive-piece">
+        <img src="true-archive-001.png" alt="true archive origin">
+
+        <div class="piece-log">
+            preserved_origin_01<br>
+            initial arcade / before descent
+        </div>
+    </div>
+
+    <div class="archive-piece">
+        <img src="true-archive-igyo-001.png" alt="true archive igyo">
+
+        <div class="piece-log">
+            preserved_entity_01<br>
+            removed from underground / still breathing
+        </div>
+    </div>
+
+    <div class="archive-piece small-piece">
+        <img src="true-archive-phase-001.png" alt="true archive phase drift">
+
+        <div class="piece-log">
+            phase_error_01<br>
+            same room / different witness
+        </div>
+    </div>
+
+    <div class="archive-piece">
+        <img src="true-archive-off-001.png" alt="true archive off">
+
+        <div class="piece-log">
+            off_record_01<br>
+            after shooting / no symbolic duty
+        </div>
+    </div>
+
+</div>
         <a class="return"
            href="archive.html">
            return
