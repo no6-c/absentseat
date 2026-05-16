@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>paradise lost</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #080606;
+    color: #d8c6b1;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 64px;
+    padding-bottom: 260px;
+}
+
+.scene {
+    width: 96%;
+    max-width: 1200px;
+}
+
+.image-area {
+    position: relative;
+}
+
+.scene img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.92)
+        contrast(1.08)
+        saturate(0.96);
+}
+
+.log {
+    margin-top: 18px;
+    margin-left: 6px;
+
+    font-size: 11px;
+    line-height: 1.8;
+
+    opacity: 0.42;
+    letter-spacing: 0.08em;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    background: rgba(255,0,0,0.0);
+    border: none;
+    z-index: 20;
+}
+
+/* グラス */
+.drink {
+    left: 37%;
+    top: 62%;
+
+    width: 13%;
+    height: 18%;
+}
+
+/* 右の黒板 */
+.board {
+    left: 73%;
+    top: 21%;
+
+    width: 20%;
+    height: 31%;
+}
+
+/* 中央の男 */
+.owner {
+    left: 32%;
+    top: 18%;
+
+    width: 33%;
+    height: 38%;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-top: 38px;
+        padding-bottom: 180px;
+    }
+
+    .scene {
+        width: 98%;
+    }
+
+    .log {
+        font-size: 10px;
+        opacity: 0.38;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="scene">
+
+        <div class="image-area">
+
+            <img src="paradise-lost-001.png" alt="paradise lost">
+
+            <!-- グラス：俗世天竺へ戻る -->
+            <a class="hotspot drink"
+               href="tenjiku-shift.html">&nbsp;</a>
+
+            <!-- 黒板：fake 404 -->
+            <a class="hotspot board"
+               href="404.html">&nbsp;</a>
+
+            <!-- 店主：未接続 deep route -->
+            <a class="hotspot owner"
+               href="404.html">&nbsp;</a>
+
+        </div>
+
+        <div class="log">
+            archive_log_21<br>
+            love / cocktail / false gospel
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
