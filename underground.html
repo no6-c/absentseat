@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>underground</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #050506;
+    color: #9fa4a8;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 80px;
+    padding-bottom: 320px;
+}
+
+.scroll {
+    width: 94%;
+    max-width: 1100px;
+}
+
+.entry {
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.entry img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.82)
+        contrast(1.1)
+        saturate(0.82);
+}
+
+.log {
+    margin-top: 14px;
+    margin-left: 4px;
+
+    font-size: 10px;
+    line-height: 1.8;
+
+    opacity: 0.34;
+    letter-spacing: 0.1em;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    background: rgba(255,0,0,0.0);
+    border: none;
+    z-index: 20;
+}
+
+/* 途中の隠し文字・染み・目など用 */
+.broken {
+    left: 68%;
+    top: 54%;
+
+    width: 16%;
+    height: 18%;
+}
+
+/* スマホ */
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-top: 42px;
+        padding-bottom: 220px;
+    }
+
+    .scroll {
+        width: 96%;
+    }
+
+    .entry {
+        margin-bottom: 96px;
+    }
+
+    .log {
+        font-size: 9px;
+        opacity: 0.3;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="scroll">
+
+        <div class="entry">
+            <img src="underground-001.png" alt="underground 001">
+
+            <div class="log">
+                underground_log_01<br>
+                drainage / no witness
+            </div>
+        </div>
+
+        <div class="entry">
+            <img src="underground-002.png" alt="underground 002">
+
+            <div class="log">
+                underground_log_02<br>
+                residual body / commuter layer
+            </div>
+        </div>
+
+        <div class="entry">
+            <img src="underground-003.png" alt="underground 003">
+
+            <!-- 隠し404入口 -->
+            <a class="hotspot broken"
+               href="404.html">&nbsp;</a>
+
+            <div class="log">
+                underground_log_03<br>
+                route damaged / continue
+            </div>
+        </div>
+
+        <div class="entry">
+            <img src="underground-004.png" alt="underground 004">
+
+            <div class="log">
+                underground_log_04<br>
+                signal below / not archived
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
