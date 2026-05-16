@@ -33,6 +33,10 @@ body {
     display: block;
 }
 
+.image-area {
+    position: relative;
+}
+    
 .log {
     margin-top: 18px;
     margin-left: 6px;
@@ -94,21 +98,29 @@ body {
 <body>
 
 <div class="wrapper">
+    
+<div class="scene">
 
-    <div class="scene">
+    <div class="image-area">
 
         <img src="absentseat-003.png" alt="archive">
 
-        <!-- ガールズバー透明リンク -->
-        <a class="hotspot girlsbar" href="tenjiku.html"></a>
+        <!-- ガールズバー -->
+        <a class="hotspot girlsbar"
+           href="tenjiku.html">&nbsp;</a>
 
- 　　　　<!-- 駄菓子屋透明リンク -->
-　　　　 <a class="hotspot dagashi" href="dagashi.html">&nbsp;</a>
+        <!-- 駄菓子屋 -->
+        <a class="hotspot dagashi"
+           href="dagashi.html">&nbsp;</a>
 
         <!-- マンホール -->
-        <a id="manholeGate" class="hotspot manhole" href="#">&nbsp;</a>
-        
-        <div class="log">
+        <a id="manholeGate"
+           class="hotspot manhole"
+           href="#">&nbsp;</a>
+
+    </div>
+
+    <div class="log">
             archive_log_01<br>
             late winter / weak signal
         </div>
