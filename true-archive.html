@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>true archive</title>
+
+<style>
+
+body {
+    margin: 0;
+    background: #020304;
+    color: #c9d0d6;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding-top: 72px;
+    padding-bottom: 320px;
+}
+
+.scene {
+    width: 96%;
+    max-width: 1200px;
+}
+
+.image-area {
+    position: relative;
+}
+
+.scene img {
+    width: 100%;
+    display: block;
+
+    filter:
+        brightness(0.96)
+        contrast(1.05)
+        saturate(0.88);
+}
+
+.log {
+    margin-top: 18px;
+    margin-left: 6px;
+
+    font-size: 11px;
+    line-height: 1.9;
+
+    opacity: 0.42;
+    letter-spacing: 0.08em;
+}
+
+.note {
+    margin-top: 80px;
+    margin-left: 6px;
+
+    max-width: 520px;
+
+    font-size: 11px;
+    line-height: 2.1;
+
+    opacity: 0.32;
+    letter-spacing: 0.08em;
+}
+
+.hotspot {
+    position: absolute;
+    display: block;
+
+    background: rgba(255,0,0,0.0);
+    border: none;
+    z-index: 20;
+}
+
+/* 販売導線：仮 */
+.shop {
+    left: 62%;
+    top: 70%;
+
+    width: 22%;
+    height: 16%;
+}
+
+/* 入口へ戻る：仮 */
+.exit {
+    left: 5%;
+    top: 8%;
+
+    width: 14%;
+    height: 12%;
+}
+
+.return {
+    display: inline-block;
+
+    margin-top: 90px;
+    margin-left: 6px;
+
+    font-size: 10px;
+
+    color: #c9d0d6;
+
+    opacity: 0.26;
+
+    text-decoration: none;
+
+    letter-spacing: 0.12em;
+}
+
+.return:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 700px) {
+
+    .wrapper {
+        padding-top: 42px;
+        padding-bottom: 220px;
+    }
+
+    .scene {
+        width: 98%;
+    }
+
+    .log,
+    .note {
+        font-size: 10px;
+    }
+
+    .note {
+        margin-top: 60px;
+    }
+
+    .return {
+        margin-top: 70px;
+        font-size: 9px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="scene">
+
+        <div class="image-area">
+
+            <img src="true-archive-001.png" alt="true archive">
+
+            <!-- 販売ページなどへ：あとで差し替え -->
+            <a class="hotspot shop"
+               href="shop.html">&nbsp;</a>
+
+            <!-- 表入口へ戻る -->
+            <a class="hotspot exit"
+               href="archive.html">&nbsp;</a>
+
+        </div>
+
+        <div class="log">
+            true_archive_log_00<br>
+            access granted / not for display
+        </div>
+
+        <div class="note">
+            This is not the entrance.<br>
+            This is not the exit.<br>
+            The archive was never hidden.<br>
+            It was only misplaced.
+        </div>
+
+        <a class="return"
+           href="archive.html">
+           return
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
