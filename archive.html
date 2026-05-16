@@ -77,6 +77,17 @@ body {
     height: 34%;
 }
 
+
+/* マンホール */
+
+.manhole {
+
+    left: 34%;
+    top: 82%;
+
+    width: 10%;
+    height: 10%;
+}
 </style>
 </head>
 
@@ -93,6 +104,9 @@ body {
 
  　　　　<!-- 駄菓子屋透明リンク -->
 　　　　 <a class="hotspot dagashi" href="dagashi.html">&nbsp;</a>
+
+        <!-- マンホール -->
+        <a id="manholeGate" class="hotspot manhole" href="#">&nbsp;</a>
         
         <div class="log">
             archive_log_01<br>
@@ -103,5 +117,26 @@ body {
 
 </div>
 
+<script>
+
+let tapCount = 0;
+
+document.getElementById("manholeGate")
+.addEventListener("click", function(event) {
+
+    event.preventDefault();
+
+    tapCount++;
+
+    if (tapCount >= 10) {
+
+        window.location.href =
+        "underground.html";
+    }
+
+});
+
+</script>
+    
 </body>
 </html>
